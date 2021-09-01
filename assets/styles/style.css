@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+.featured-image {
+	width: 90%;
+	max-height: 200px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.profile img {
+	width: 90px;
+}
+
+#content {
+	float: left;
+	width: 80%;
+}
+
+aside {
+	float: right;
+	width: 20%;
+	padding-left: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
+ 
+.sub-menu {
+	display: none;
+}
+
+.sub-menu.selected {
+	display: block;
+	transition: transform .2s;
+}
+
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+	background-color: #e6d5b8;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #3c311f;
+    text-align: center;
+    color: white;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+	background-color: #623f1f;
+	padding: 5px;
+	position: sticky;
+	top: 0;
+}
+
+nav li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ddcdbf;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+body {
+	font-family: 'Catamaran', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	background-color: #85603f;
+}
+
+main {
+	padding: 20px;
+	overflow: auto;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.flex-container-row {
+	display: flex;
+	width: 100%;
+	margin: 0 -5px;
+}
+
+.namaminuman {
+	color: white;
+}
+
+.coffee {
+	flex-basis: 20%;
+	color: #ddcdbf;
+    font-size: 0.8em;
+    text-align: center;
+    border: 1px;
+    background: #c28d4b;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 0 10px;
+}
+
+.noncoffee {
+	flex-basis: 20%;
+	color: #ddcdbf;
+    font-size: 0.8em;
+    text-align: center;
+    border: 1px;
+    background: #c28d4b;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 0 10px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+}
